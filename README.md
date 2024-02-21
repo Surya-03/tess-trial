@@ -29,14 +29,14 @@ Here are the available segmentation modes:
 12 Sparse text with OSD. <br>
 13 Raw line. Treat the image as a single text line bypassing hacks that are Tesseract-specific. <be>
 
-## Useful Pytesseract functions which have a lot of value
 ### OCR Engine Mode:
 Pytesseract also supports different OCR Engine modes, which determine the underlying OCR engine to be used. Here are the available OCR Engine modes:
 0 Legacy engine only. <br>
 1 Neural nets LSTM engine only. <br>
 2 Legacy + LSTM engines. <br>
-3 Default, based on what is available. <br>
+3 Default, based on what is available. <be>
 
+## Useful Pytesseract functions which have a lot of value
 ### `image_to_string(image, lang=None, config='', nice=0, output_type='')`
 
 **Description:** This function extracts text from an image.  
