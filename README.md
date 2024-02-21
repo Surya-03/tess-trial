@@ -27,8 +27,9 @@ Here are the available segmentation modes:
 10 Treat the image as a single character. <br>
 11 Sparse text. Find as much text as possible in no particular order. <br>
 12 Sparse text with OSD. <br>
-13 Raw line. Treat the image as a single text line bypassing hacks that are Tesseract-specific. <br>
+13 Raw line. Treat the image as a single text line bypassing hacks that are Tesseract-specific. <be>
 
+## Useful Pytesseract functions which have a lot of value
 ### OCR Engine Mode:
 Pytesseract also supports different OCR Engine modes, which determine the underlying OCR engine to be used. Here are the available OCR Engine modes:
 0 Legacy engine only. <br>
@@ -36,3 +37,28 @@ Pytesseract also supports different OCR Engine modes, which determine the underl
 2 Legacy + LSTM engines. <br>
 3 Default, based on what is available. <br>
 
+### `image_to_string(image, lang=None, config='', nice=0, output_type='')`
+
+**Description:** This function extracts text from an image.  
+**How it helps:** It is the core function for extracting text from images. It allows you to easily convert images containing text into machine-readable text data.
+
+---
+
+### `image_to_boxes(image, lang=None, config='', output_type='')`
+
+**Description:** Extracts the bounding box coordinates of each recognized character in the image.  
+**How it helps:** Useful for tasks requiring character-level information such as text localization, extracting individual characters, or analyzing text layout.
+
+---
+
+### `image_to_data(image, lang=None, config='', output_type='')`
+
+**Description:** Performs OCR on the image and returns result data including bounding box coordinates, confidence scores, and other information for each recognized word or character.  
+**How it helps:** Provides detailed information about recognized text, including its position, size, and confidence level. This can be used for tasks such as text extraction, analysis, or validation.
+
+---
+
+### `image_to_osd(image, config='', output_type='')`
+
+**Description:** Performs Orientation and Script Detection (OSD) on the input image and returns a dictionary containing the detected script, orientation, and other information.  
+**How it helps:** Useful for detecting the orientation of text in images, especially when dealing with images containing text in different orientations or scripts.
