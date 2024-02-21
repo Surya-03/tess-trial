@@ -14,7 +14,7 @@ pip install pytesseract pillow opencv-python matplotlib
 Pytesseract provides various page segmentation modes for different types of text in images. These modes determine how the OCR engine should interpret and process the image.
 Here are the available segmentation modes:
 
-0 Orientation and script detection (OSD) only.
+0 Orientation and script detection (OSD) only. <br>
 1 Automatic page segmentation with OSD.
 2 Automatic page segmentation, but no OSD, or OCR.
 3 Fully automatic page segmentation, but no OSD. (Default)
