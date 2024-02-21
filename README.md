@@ -1,7 +1,7 @@
-#H1 Optical Character Recognition (OCR) with Pytesseract
+# Optical Character Recognition (OCR) with Pytesseract
 This repository contains code snippets demonstrating how to perform Optical Character Recognition (OCR) using Pytesseract, an OCR tool for Python. Pytesseract is a wrapper for Google's Tesseract-OCR Engine, which is widely used for extracting text from images.
 
-Requirements
+## Requirements
 Make sure you have the following dependencies installed:
 pytesseract
 PIL (Python Imaging Library)
@@ -10,7 +10,7 @@ OpenCV (cv2)
 You can install these dependencies using pip:
 pip install pytesseract pillow opencv-python matplotlib
 
-Page Segmentation Modes:
+### Page Segmentation Modes:
 Pytesseract provides various page segmentation modes for different types of text in images. These modes determine how the OCR engine should interpret and process the image.
 Here are the available segmentation modes:
 
@@ -29,7 +29,7 @@ Here are the available segmentation modes:
 12 Sparse text with OSD.
 13 Raw line. Treat the image as a single text line bypassing hacks that are Tesseract-specific.
 
-OCR Engine Mode:
+### OCR Engine Mode:
 Pytesseract also supports different OCR Engine modes, which determine the underlying OCR engine to be used. Here are the available OCR Engine modes:
 0 Legacy engine only.
 1 Neural nets LSTM engine only.
