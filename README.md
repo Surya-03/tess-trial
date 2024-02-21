@@ -1,4 +1,4 @@
-Optical Character Recognition (OCR) with Pytesseract
+#H1 Optical Character Recognition (OCR) with Pytesseract
 This repository contains code snippets demonstrating how to perform Optical Character Recognition (OCR) using Pytesseract, an OCR tool for Python. Pytesseract is a wrapper for Google's Tesseract-OCR Engine, which is widely used for extracting text from images.
 
 Requirements
